@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranay's Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Add Google Fonts or any other link here -->
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="header">
+        <nav>
+            <div class="logo">
+                <h2>Pranay</h2>
+            </div>
+            <!-- Hamburger Menu for Mobile -->
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- Home Section -->
+<section id="home">
+    <div class="intro">
+        <img src="images/Pranay.jpg" alt="Pranay's Profile Picture" class="profile-img">
+        <h1>Hi, I'm <span class="highlight">Pranay</span></h1>
+        <h4>Aspiring Data Analyst | Power BI Developer | Python Enthusiast</h4>
+        <p>Specializing in Data Science and building impactful solutions.</p>
+        <a href="Software Developer Resume.pdf" class="cta-btn" download>Download Resume</a>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>I am an aspiring Data Analyst and Power BI Developer with a strong foundation in Data Science. My expertise includes working with Python, SQL, and Power BI to analyze and visualize data effectively.</p>
+            <p>With hands-on experience in Exploratory Data Analysis and reporting, I am adept at identifying trends, solving complex problems, and delivering compelling visualizations. My commitment lies in leveraging technology and analytical tools to drive impactful solutions and contribute to organizational success.</p>
+            <p>Currently, I am seeking opportunities to further develop my skills and make meaningful contributions as I grow into a well-rounded data professional.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3>Cuisine Rating Analysis</h3>
+                <p>A Python-based project focusing on Exploratory Data Analysis (EDA) of cuisine ratings. Utilized statistical analysis to uncover key patterns and trends.</p>
+                <div class="tech-logos">
+                    <img src="images/python.jpg" alt="Python logo" width="150">
+                </div>
+                <a href="https://github.com/pranay2331/Cuisine_Rating_Analysis" class="github-button" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h3>Crop Production Analysis</h3>
+                <p>A project focused on retrieving queries based on a dataset. Utilized SQL queries to extract insights and manage the database efficiently.</p>
+                <div class="tech-logos">
+                    <img src="images/mysql1.png" alt="MySQL logo" width="150">
+                </div>
+                <a href="https://github.com/pranay2331/Crop-Production-Analysis" class="github-button" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <h3>HR Analysis Dashboard</h3>
+                <p>A Power BI dashboard for HR data analysis to help businesses visualize key metrics and make data-driven decisions.</p>
+                <div class="tech-logos">
+                    <img src="images/powerbi.jpg" alt="Power BI logo" width="150">
+                </div>
+                <a href="https://github.com/pranay2331/HR-Dashboard-Analysis" class="github-button" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="images/python.jpg" alt="Python logo" width="150">
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <img src="images/mysql1.png" alt="MySQL logo" width="150">
+                <p>MySQL</p>
+            </div>
+            <div class="skill">
+                <img src="images/powerbi.jpg" alt="Power BI logo" width="150">
+                <p>Power BI</p>
+            </div>
+            <div class="skill">
+                <img src="images/HTML.png" alt="HTML logo" width="150">
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <img src="images/CSS1.jpg" alt="CSS logo" width="150">
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <img src="images/django1.png" alt="Django logo" width="150">
+                <p>Django</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="college-logo">
+                <img src="images/MREC_logo.png" alt="MallaReddy Engineering College">
+            </div>
+            <div class="education-details">
+                <h3>Bachelor of Technology</h3>
+                <h4>Computer Science & Engineering</h4>
+                <p>MallaReddy Engineering College (Graduated in 2025)</p>
+                <p>GPA: 8.1/10</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <p class="error-message" id="nameError">Name is required and must be at least 3 characters.</p>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <p class="error-message" id="emailError">Please enter a valid email address.</p>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+                <p class="error-message" id="messageError">Message must be at least 10 characters long.</p>
+            </div>
+            <button type="submit">Send</button>
+            <p class="success" id="successMessage"></p>
+        </form>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <span>&copy; 2025 Pranay. All rights reserved.</span>
+            <div class="social-links">
+                <a href="https://github.com/pranay2331" target="_blank" aria-label="GitHub">
+                    <img src="images/github.png" alt="GitHub" class="icon">
+                </a>
+                <a href="https://www.linkedin.com/in/sunku-pranay" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.png" alt="LinkedIn" class="icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
